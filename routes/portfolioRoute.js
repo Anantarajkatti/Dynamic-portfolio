@@ -5,7 +5,7 @@ const  {Intro,About,Experience,Project,Contact}= require('../models/portfolioMod
 const User= require('../models/userModel')
 
 // get All Portfolio data
-router.get('/api/portfolioRoute/get-portfolio-data',async(req,res)=>{
+router.get('/get-portfolio-data',async(req,res)=>{
     try{
         const intros= await Intro.find();
         const abouts= await About.find();
