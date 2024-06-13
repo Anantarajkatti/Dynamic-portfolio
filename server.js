@@ -7,7 +7,7 @@ const dbConfig=require("./config/dbConfig")
 
 const portfolioRoute=require("./routes/portfolioRoute");
 
-app.use(express.json());
+app.use(express.json());  
 app.use("/api/portfolioRoute",portfolioRoute)
 
 
